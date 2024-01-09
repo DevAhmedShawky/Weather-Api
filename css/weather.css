@@ -1,0 +1,216 @@
+:root {
+  --main-color: #009ad8;
+  --main-background-color: #1e202b;
+  --main-transition: 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--main-background-color);
+}
+
+.head-nav .logo {
+  width: 64px;
+}
+
+.head-nav .logo-type {
+  flex-direction: column;
+}
+
+.head-nav .logo-type .site-description {
+  font-size: 0.7142857143em;
+  color: #bfc1c8;
+}
+
+.head-nav .navbar-nav .nav-link.active {
+  color: var(--main-color) !important;
+  border-color: var(--main-color);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.head-nav .navbar-nav .nav-link {
+  color: #fff;
+  border: 1px solid transparent;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+.head-nav .navbar-nav .nav-item:hover .nav-link {
+  color: var(--main-color) !important;
+  border-color: var(--main-color);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+
+/* Start Hero Secition */
+.hero {
+  background-image: url(../img/banner.png);
+  background-size: cover;
+  min-height: 350px;
+}
+
+.hero .find-location input[type="text"] {
+  width: 100%;
+  padding: 20px 50px 20px 20px;
+  background: #1e202b;
+  color: white;
+  border: 0;
+  outline: none;
+}
+
+.find-location input[type="button"] {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  padding: 0 40px;
+  border: none;
+  background: #009ad8;
+}
+
+.line {
+  display: block;
+  margin: auto;
+  width: 50%;
+  border-top: 1px solid var(--main-color);
+  position: relative;
+}
+
+.line::before {
+  content: "or";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  line-height: 1.7;
+  color: #fff;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.location-btn {
+  /* width: 20%; */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 50px;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  background-color: transparent;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+.location-btn:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+/* End Hero Secition */
+.forecast-container {
+  margin-top: -80px;
+  margin-bottom: 50px;
+  color: #bfc1c8;
+}
+
+.forecast .child {
+  background-color: #323544;
+  border-radius: .625rem;
+  -webkit-border-radius: .625rem;
+  -moz-border-radius: .625rem;
+  -ms-border-radius: .625rem;
+  -o-border-radius: .625rem;
+}
+
+
+.forecast-table .forecast-header {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.forecast-table .forecast-content {
+  padding: 30px 20px;
+}
+
+.forecast-table .forecast-container .forecast-today .degree {
+  font-size: 90px;
+}
+
+.forecast-table .forecast-container .forecast-content .custom {
+  color: var(--main-color);
+}
+
+.forecast-table .forecast-container .forecast-second {
+  background-color: #262936;
+}
+
+/* Start Footer Secition */
+
+.site-footer {
+  background-color: #262936;
+}
+
+.site-footer .subscribe-form input[type="text"] {
+  padding: 20px 100px 20px 20px;
+  background: var(--main-background-color);
+  outline: none;
+}
+
+.site-footer .subscribe-form input[type="submit"] {
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
+  background: var(--main-color);
+  padding: 10px 20px;
+}
+
+.site-footer .social-links a {
+  width: 50px;
+  height: 50px;
+  background: var(--main-background-color);
+  color: var(--main-color);
+  transition: var(--main-transition) ease;
+  -webkit-transition: var(--main-transition) ease;
+  -moz-transition: var(--main-transition) ease;
+  -ms-transition: var(--main-transition) ease;
+  -o-transition: var(--main-transition) ease;
+}
+
+.site-footer .social-links a:hover {
+  background: var(--main-color);
+  color: #fff;
+}
+
+
+
+
+/* End Footer Secition */
